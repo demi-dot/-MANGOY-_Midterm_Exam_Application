@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Book;
+use App\Models\Movie;
 
 class ProductController extends Controller
 {
     public function index() {
-        $books = Book::all();
+        $movies = Movie::all();
 
-        return view('products', compact('books'));
+        return view('products', compact('movies'));
     }
 }

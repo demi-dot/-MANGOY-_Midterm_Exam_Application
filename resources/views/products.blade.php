@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Products</title>
+    <title>Movie Products</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; }
         h1 { color: #333; }
@@ -14,13 +14,13 @@
     </style>
 </head>
 <body>
-    <h1>Book Products</h1>
-    @foreach ($books as $book)
+    <h1>Movie Products</h1>
+    @foreach ($movies as $movie)
         <div class="product">
-            <div class="product-title">Title: {{ $book['title'] }}</div>
-            <div class="product-genre">Genre: {{ $book['genre'] }}</div>
-            <div class="product-author">Author: {{ $book['author'] }}</div>
-            <div class="product-author">Price: P{{ $book['price'] }}</div>
+            <div class="product-title">Title: {{ $movie['title'] }}</div>
+            <div class="product-genre">Genre: {{ $movie['genre'] }}</div>
+            <div class="product-author">Author: {{ $movie['author'] }}</div>
+            <div class="product-author">Price: P{{ $movie['price'] }}</div>
         </div>
     @endforeach
 </body>
